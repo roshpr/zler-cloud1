@@ -1,0 +1,15 @@
+Port 22
+AddressFamily any
+ListenAddress 0.0.0.0
+ListenAddress ::
+
+PermitRootLogin no
+AuthorizedKeysFile	.ssh/authorized_keys
+PasswordAuthentication yes
+PrintMotd yes
+PrintLastLog yes
+UseDNS no
+UsePAM yes
+#Banner none
+
+Subsystem	sftp	/usr/libexec/openssh/sftp-server
